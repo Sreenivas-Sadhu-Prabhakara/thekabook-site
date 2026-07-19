@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ThekaBook — Every site's P&amp;L, in your pocket</title>
+  <meta name="description" content="ThekaBook gives small civil and interior contractors a live per-site P&L. Track labour muster, material, and advances against your quoted budget. Rs 999/mo." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#work">Skip to content</a>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="top">
+    <div class="wrap nav__inner">
+      <a class="brand" href="#top" aria-label="ThekaBook home">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28" role="img" aria-hidden="true">
+            <rect x="3" y="4" width="26" height="24" rx="3" fill="#2563EB"/>
+            <rect x="7" y="4" width="3" height="24" fill="#fff" opacity="0.35"/>
+            <path d="M13 10h11M13 15h11M13 20h7" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand__name">ThekaBook</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#problem">Problem</a>
+        <a href="#insight">Insight</a>
+        <a href="#how">How it works</a>
+        <a href="#features">Features</a>
+        <a href="#pricing">Pricing</a>
+      </nav>
+      <a href="#pricing" class="btn btn--sm">Start a site book</a>
+    </div>
+  </header>
+
+  <main id="work">
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="eyebrow__dot" aria-hidden="true"></span> For civil &amp; interior contractors</p>
+          <h1 class="hero__title">Every site's <span class="hl">P&amp;L</span>,<br />in your pocket.</h1>
+          <p class="hero__pain">You are running four sites from one diary. By the time you notice a site has eaten its budget, the money is already spent. ThekaBook shows the running cost of every site the moment you log a muster.</p>
+          <div class="hero__cta">
+            <a href="#pricing" class="btn btn--lg">Start a site book — Rs 999/mo</a>
+            <a href="#how" class="btn btn--ghost btn--lg">See how it works</a>
+          </div>
+          <ul class="hero__trust">
+            <li><strong>3–5 sites</strong> tracked together</li>
+            <li><strong>Per-site</strong> profit &amp; loss</li>
+            <li><strong>Overspend</strong> alerts</li>
+          </ul>
+        </div>
+
+        <!-- Signature: a tactile "site card" pulled from the ledger -->
+        <aside class="hero__card" aria-label="Example site card">
+          <div class="sitecard">
+            <div class="sitecard__top">
+              <div>
+                <p class="sitecard__label">SITE</p>
+                <p class="sitecard__name">Kothrud Villa — Aarav Deshmukh</p>
+              </div>
+              <span class="pill pill--warn" id="pillOver">Over budget</span>
+            </div>
+            <div class="sitecard__bar" aria-hidden="true">
+              <div class="sitecard__fill" id="barFill" style="width:108%"></div>
+              <div class="sitecard__budgetline"><span>Quoted budget</span></div>
+            </div>
+            <dl class="sitecard__grid">
+              <div><dt>Labour payout</dt><dd class="num">Rs <span data-count="486000">4,86,000</span></dd></div>
+              <div><dt>Material in</dt><dd class="num">Rs <span data-count="742500">7,42,500</span></dd></div>
+              <div><dt>Advances</dt><dd class="num">Rs <span data-count="120000">1,20,000</span></dd></div>
+              <div class="sitecard__total"><dt>Running cost</dt><dd class="num">Rs <span data-count="1348500">13,48,500</span></dd></div>
+            </dl>
+            <p class="sitecard__foot"><span class="sitecard__foot-k">Quoted</span> Rs 12,50,000 <span class="sitecard__delta">· Rs 98,500 over</span></p>
+          </div>
+        </aside>
+      </div>
+      <div class="hero__rule" aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ 2. THE PROBLEM ============ -->
+    <section class="section problem" id="problem">
+      <div class="wrap">
+        <p class="kicker">01 · The problem</p>
+        <h2 class="section__title">A diary can hold the entries. It can't hold the maths.</h2>
+        <div class="problem__grid">
+          <p class="lead">A small thekedar is running Kothrud, Baner, and Wakad at once — plus a flat interior in Kalyani Nagar. The record of all four lives in a paper diary, a WhatsApp group with the mistri, and your own memory.</p>
+          <div class="break">
+            <h3>Where today's way breaks</h3>
+            <ul class="break__list">
+              <li><span class="break__x" aria-hidden="true">✕</span> The diary has today's muster, but never today's <em>total</em>. You can't add up four sites in your head at 9pm.</li>
+              <li><span class="break__x" aria-hidden="true">✕</span> Material bills come on WhatsApp and get lost above the next 200 messages.</li>
+              <li><span class="break__x" aria-hidden="true">✕</span> Advances to workers are remembered, not recorded — until two people claim the same Rs 5,000.</li>
+              <li><span class="break__x" aria-hidden="true">✕</span> You only learn a site lost money after the client's final payment clears. Too late to fix.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. THE INSIGHT ============ -->
+    <section class="section insight" id="insight">
+      <div class="wrap insight__inner">
+        <p class="kicker kicker--light">02 · The insight</p>
+        <p class="insight__quote">Contractors don't lack entries. They lack the <span class="hl">one number</span> that a diary can never show: <em>this site, right now, against the price I quoted.</em></p>
+        <p class="insight__sub">Muster units × rate, plus material, plus advances — measured against the quoted budget, live. That is the whole wedge. Do that one sum well, on every site, every day, and the overspend can't hide.</p>
+      </div>
+    </section>
+
+    <!-- ============ 4. HOW IT WORKS ============ -->
+    <section class="section how" id="how">
+      <div class="wrap">
+        <p class="kicker">03 · How it works</p>
+        <h2 class="section__title">Log the day. Read the P&amp;L. That's it.</h2>
+        <ol class="steps">
+          <li class="step">
+            <span class="step__n">1</span>
+            <h3>Open a book per site</h3>
+            <p>Add each site with its <strong>quoted budget</strong> — Kothrud Villa at Rs 12,50,000, Baner shop at Rs 6,80,000. Every entry after this rolls up under its site.</p>
+          </li>
+          <li class="step">
+            <span class="step__n">2</span>
+            <h3>Mark the daily muster</h3>
+            <p>Enter how many workers turned up and their rate. <strong>Muster units × rate</strong> becomes today's labour payout — no adding heads on your fingers at night.</p>
+          </li>
+          <li class="step">
+            <span class="step__n">3</span>
+            <h3>Add material &amp; advances</h3>
+            <p>Snap a cement or ply bill in as a material amount. Record an advance to Suresh against his site. Both hit the running cost the second you save.</p>
+          </li>
+          <li class="step">
+            <span class="step__n">4</span>
+            <h3>Read the site P&amp;L</h3>
+            <p>Running cost vs quoted budget, per site, instantly. Cross the budget and ThekaBook flags it <strong>before</strong> the next material order goes out.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ 5. FEATURES ============ -->
+    <section class="section features" id="features">
+      <div class="wrap">
+        <p class="kicker">04 · What's inside</p>
+        <h2 class="section__title">Six things a diary was never going to do.</h2>
+        <div class="feat__grid">
+          <article class="feat">
+            <h3>Per-site running cost</h3>
+            <p>Labour payout + material amount + advances, totalled live for each site. One glance, not four pages.</p>
+          </article>
+          <article class="feat">
+            <h3>Overspend alert</h3>
+            <p>The moment running cost crosses the quoted budget, the site turns red — so you catch it, not the client.</p>
+          </article>
+          <article class="feat">
+            <h3>Labour payout sheet</h3>
+            <p>Muster units × rate per worker, so Sunday's payout is a printed sheet, not an argument.</p>
+          </article>
+          <article class="feat">
+            <h3>Site P&amp;L view</h3>
+            <p>Quoted budget, spent-to-date, and margin left — the number a diary could never add up.</p>
+          </article>
+          <article class="feat">
+            <h3>Advance ledger</h3>
+            <p>Every advance recorded against a worker and a site. No two people claim the same Rs 5,000.</p>
+          </article>
+          <article class="feat">
+            <h3>All-sites dashboard</h3>
+            <p>Spend vs budget per site, which sites are over, and this-week's labour cost — on one screen.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 6. PRODUCT PREVIEW ============ -->
+    <section class="section preview" id="preview">
+      <div class="wrap">
+        <p class="kicker">05 · Inside the app</p>
+        <h2 class="section__title">Your four sites, on one screen.</h2>
+        <p class="preview__sub">This is the ThekaBook dashboard — spend against budget for every site, the ones running over, and what labour cost you this week.</p>
+
+        <div class="shot" role="img" aria-label="ThekaBook dashboard showing four sites with spend against quoted budget, two sites over budget, and this week's labour cost of Rs 1,62,400.">
+          <div class="shot__chrome" aria-hidden="true">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="shot__url">thekabook.app · Dashboard</span>
+          </div>
+          <div class="shot__body">
+            <div class="shot__head">
+              <div>
+                <p class="shot__hello">Namaste, Ganesh Contractors</p>
+                <p class="shot__sub">4 active sites · Pune</p>
+              </div>
+              <div class="shot__stats">
+                <div class="stat">
+                  <p class="stat__k">This-week labour</p>
+                  <p class="stat__v num">Rs 1,62,400</p>
+                </div>
+                <div class="stat stat--warn">
+                  <p class="stat__k">Sites over budget</p>
+                  <p class="stat__v num">2</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="board" role="table" aria-label="Sites: spend against quoted budget">
+              <div class="board__head" role="row">
+                <span role="columnheader">Site</span>
+                <span role="columnheader" class="ta-r">Quoted</span>
+                <span role="columnheader" class="ta-r">Running cost</span>
+                <span role="columnheader">Spend vs budget</span>
+                <span role="columnheader" class="ta-r">Status</span>
+              </div>
+
+              <div class="row" role="row">
+                <span class="row__site" role="cell"><strong>Kothrud Villa</strong><em>Aarav Deshmukh</em></span>
+                <span class="num ta-r" role="cell">Rs 12,50,000</span>
+                <span class="num ta-r" role="cell">Rs 13,48,500</span>
+                <span class="row__bar" role="cell"><span class="row__fill row__fill--over" style="width:100%"></span></span>
+                <span class="ta-r" role="cell"><span class="pill pill--warn">108%</span></span>
+              </div>
+
+              <div class="row" role="row">
+                <span class="row__site" role="cell"><strong>Baner Shop Fit-out</strong><em>Meena Kulkarni</em></span>
+                <span class="num ta-r" role="cell">Rs 6,80,000</span>
+                <span class="num ta-r" role="cell">Rs 5,44,000</span>
+                <span class="row__bar" role="cell"><span class="row__fill" style="width:80%"></span></span>
+                <span class="ta-r" role="cell"><span class="pill pill--ok">80%</span></span>
+              </div>
+
+              <div class="row" role="row">
+                <span class="row__site" role="cell"><strong>Wakad Duplex</strong><em>Imran Shaikh</em></span>
+                <span class="num ta-r" role="cell">Rs 18,40,000</span>
+                <span class="num ta-r" role="cell">Rs 11,04,000</span>
+                <span class="row__bar" role="cell"><span class="row__fill" style="width:60%"></span></span>
+                <span class="ta-r" role="cell"><span class="pill pill--ok">60%</span></span>
+              </div>
+
+              <div class="row" role="row">
+                <span class="row__site" role="cell"><strong>Kalyani Nagar Flat</strong><em>Rohit Nair</em></span>
+                <span class="num ta-r" role="cell">Rs 4,20,000</span>
+                <span class="num ta-r" role="cell">Rs 4,41,000</span>
+                <span class="row__bar" role="cell"><span class="row__fill row__fill--over" style="width:100%"></span></span>
+                <span class="ta-r" role="cell"><span class="pill pill--warn">105%</span></span>
+              </div>
+            </div>
+
+            <div class="shot__foot">
+              <div class="mini">
+                <p class="mini__k">Today's muster · all sites</p>
+                <p class="mini__v num">37 workers · Rs 22,200</p>
+              </div>
+              <div class="mini">
+                <p class="mini__k">Material in · this week</p>
+                <p class="mini__v num">Rs 3,18,700</p>
+              </div>
+              <div class="mini">
+                <p class="mini__k">Advances outstanding</p>
+                <p class="mini__v num">Rs 84,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <p class="preview__note">Sample data. Names, sites and figures are illustrative of a mid-size Pune contractor.</p>
+      </div>
+    </section>
+
+    <!-- ============ 7. PRICING ============ -->
+    <section class="section pricing" id="pricing">
+      <div class="wrap pricing__inner">
+        <div class="pricing__copy">
+          <p class="kicker">06 · Pricing</p>
+          <h2 class="section__title">One price. Every site you run.</h2>
+          <p class="pricing__roi">Catch <strong>one</strong> site going over by Rs 50,000 before the last material order, and ThekaBook has paid for four years in a single afternoon. That's the whole pitch.</p>
+          <ul class="pricing__list">
+            <li>Unlimited sites &amp; workers</li>
+            <li>Per-site P&amp;L and overspend alerts</li>
+            <li>Labour payout sheets, printable</li>
+            <li>Material &amp; advance ledgers</li>
+            <li>Works on the phone in your pocket</li>
+          </ul>
+        </div>
+        <div class="price">
+          <p class="price__tag">All of it</p>
+          <p class="price__amt"><span class="price__cur">Rs</span> 999<span class="price__per">/mo</span></p>
+          <p class="price__note">No per-site fees. No per-worker fees. Cancel any month.</p>
+          <a href="#top" class="btn btn--lg btn--full">Start a site book</a>
+          <p class="price__fine">Mock button — this is an explainer page.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 8. WHO IT'S FOR + FAQ ============ -->
+    <section class="section audience" id="faq">
+      <div class="wrap audience__grid">
+        <div class="who">
+          <p class="kicker">07 · Who it's for</p>
+          <h2 class="section__title">Built for the thekedar running a few sites at once.</h2>
+          <ul class="who__list">
+            <li><strong>Small civil contractors</strong> juggling 3–5 sites from a single diary.</li>
+            <li><strong>Interior contractors</strong> doing flat and shop fit-outs against a quoted price.</li>
+            <li>Anyone paying a daily muster and losing track of which site the money went to.</li>
+          </ul>
+        </div>
+        <div class="faq">
+          <p class="kicker">FAQ</p>
+          <details class="q" open>
+            <summary>Do I have to change how I record the day?</summary>
+            <p>No. You still note who came and what you bought — you just note it against a site. ThekaBook does the totalling and the P&amp;L for you.</p>
+          </details>
+          <details class="q">
+            <summary>Will my mistri need to learn it?</summary>
+            <p>No. You enter the muster and bills yourself, the same entries you already put in the diary. The mistri keeps sending photos on WhatsApp; you log them in seconds.</p>
+          </details>
+          <details class="q">
+            <summary>What if I only run two sites?</summary>
+            <p>Then you'll see two site P&amp;Ls instead of five — same Rs 999. The value is the running-cost-vs-budget number, and that helps from your very first site.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ 9. FOOTER ============ -->
+  <footer class="foot">
+    <div class="wrap foot__inner">
+      <div class="foot__brand">
+        <span class="brand__name brand__name--foot">ThekaBook</span>
+        <p class="foot__tag">Every site's P&amp;L, in your pocket.</p>
+      </div>
+      <div class="foot__meta">
+        <p class="foot__studio">A <strong>KARYA</strong> studio build</p>
+        <p><a href="mailto:sreeni.nintendo@gmail.com">sreeni.nintendo@gmail.com</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
