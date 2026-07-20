@@ -3,7 +3,7 @@
 A standalone marketing / explainer page for **ThekaBook**, the per-site P&L app for
 small Indian civil and interior contractors.
 
-> **Every site's P&L, in your pocket.** — Rs 999/mo
+> **Every site's P&L, in your pocket.** — subscription · pricing on discovery
 
 This is **not** the app UI. It is a self-contained static site whose only job is to make
 the product idea instantly clear to (a) a non-technical contractor and (b) an investor
